@@ -56,30 +56,30 @@
   h1{font-family:'Big Shoulders Stencil Display',sans-serif;font-weight:700;font-size:clamp(28px,5vh,56px);letter-spacing:0.01em;margin:6px 0 4px;text-transform:none;}
   .sub{font-family:'Space Mono',monospace;font-size:13px;color:var(--paper-dim);letter-spacing:0.04em;}
 
-  .stage-wrap{position:relative;z-index:10;max-width:760px;margin:0.5vh auto 0;padding:0 24px;text-align:center;}
-  .stage-row{display:flex;align-items:center;justify-content:center;gap:16px;}
+  .stage-wrap{position:relative;z-index:10;max-width:900px;margin:0.5vh auto 0;padding:0 24px;text-align:center;}
+  .stage-row{display:flex;align-items:center;justify-content:center;gap:20px;}
   .stage-nav{
     flex:0 0 auto;background:rgba(10,7,7,0.5);border:1px solid rgba(237,230,214,0.16);color:var(--paper);
-    width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:15px;
+    width:42px;height:42px;border-radius:50%;cursor:pointer;font-size:16px;
     display:flex;align-items:center;justify-content:center;transition:border-color 0.3s ease, background 0.3s ease;
   }
   .stage-nav:hover{border-color:var(--safelight);background:var(--safelight-glow);}
   .stage{
-    position:relative;aspect-ratio:4/3;max-height:48vh;border:1px solid rgba(237,230,214,0.14);border-radius:2px;
-    overflow:hidden;background:rgba(10,7,7,0.5);backdrop-filter:blur(3px);flex:1;min-width:0;
+    position:relative;height:40vh;aspect-ratio:4/3;width:auto;flex:0 0 auto;border:1px solid rgba(237,230,214,0.14);border-radius:2px;
+    overflow:hidden;background:rgba(10,7,7,0.5);backdrop-filter:blur(3px);
   }
   .stage img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:var(--room-deep);
     opacity:0;transition:opacity 1s ease;
   }
   .stage img.active{opacity:1;}
-  .stage-caption{margin-top:10px;}
-  .cam-name{font-family:'Big Shoulders Stencil Display',sans-serif;font-weight:700;font-size:26px;letter-spacing:0.03em;text-transform:uppercase;}
-  .cam-meta{font-family:'Space Mono',monospace;font-size:12px;color:var(--metal-light);margin-top:3px;letter-spacing:0.03em;}
+  .stage-caption{margin-top:14px;}
+  .cam-name{font-family:'Big Shoulders Stencil Display',sans-serif;font-weight:700;font-size:30px;letter-spacing:0.03em;text-transform:uppercase;}
+  .cam-meta{font-family:'Space Mono',monospace;font-size:13px;color:var(--metal-light);margin-top:4px;letter-spacing:0.03em;}
 
   .develop-btn{
-    margin-top:8px;padding:6px 16px;background:none;border:1px solid var(--metal-light);
-    color:var(--paper);border-radius:2px;cursor:pointer;font-size:11px;letter-spacing:0.05em;
+    margin-top:12px;padding:9px 20px;background:none;border:1px solid var(--metal-light);
+    color:var(--paper);border-radius:2px;cursor:pointer;font-size:13px;letter-spacing:0.05em;
     transition:border-color 0.3s ease, color 0.3s ease;
   }
   .develop-btn.ready{border-color:var(--safelight);color:var(--paper);}
