@@ -56,16 +56,16 @@
   h1{font-family:'Big Shoulders Stencil Display',sans-serif;font-weight:700;font-size:clamp(28px,5vh,56px);letter-spacing:0.01em;margin:6px 0 4px;text-transform:none;}
   .sub{font-family:'Space Mono',monospace;font-size:13px;color:var(--paper-dim);letter-spacing:0.04em;}
 
-  .stage-wrap{position:relative;z-index:10;max-width:400px;margin:0.5vh auto 0;padding:0 24px;text-align:center;}
-  .stage-row{display:flex;align-items:center;justify-content:center;gap:10px;}
+  .stage-wrap{position:relative;z-index:10;max-width:520px;margin:0.5vh auto 0;padding:0 24px;text-align:center;}
+  .stage-row{display:flex;align-items:center;justify-content:center;gap:12px;}
   .stage-nav{
     flex:0 0 auto;background:rgba(10,7,7,0.5);border:1px solid rgba(237,230,214,0.16);color:var(--paper);
-    width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:12px;
+    width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:13px;
     display:flex;align-items:center;justify-content:center;transition:border-color 0.3s ease, background 0.3s ease;
   }
   .stage-nav:hover{border-color:var(--safelight);background:var(--safelight-glow);}
   .stage{
-    position:relative;aspect-ratio:4/3;max-height:26vh;border:1px solid rgba(237,230,214,0.14);border-radius:2px;
+    position:relative;aspect-ratio:4/3;max-height:36vh;border:1px solid rgba(237,230,214,0.14);border-radius:2px;
     overflow:hidden;background:rgba(10,7,7,0.5);backdrop-filter:blur(3px);flex:1;min-width:0;
   }
   .stage img{
@@ -74,7 +74,7 @@
   }
   .stage img.active{opacity:1;}
   .stage-caption{margin-top:8px;}
-  .cam-name{font-family:'Big Shoulders Stencil Display',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.03em;text-transform:uppercase;}
+  .cam-name{font-family:'Big Shoulders Stencil Display',sans-serif;font-weight:700;font-size:20px;letter-spacing:0.03em;text-transform:uppercase;}
   .cam-meta{font-family:'Space Mono',monospace;font-size:10px;color:var(--metal-light);margin-top:3px;letter-spacing:0.03em;}
 
   .develop-btn{
